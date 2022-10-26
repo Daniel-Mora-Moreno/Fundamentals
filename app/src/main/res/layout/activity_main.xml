@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:text="Username"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/cancel"
+        app:layout_constraintStart_toStartOf="@id/ok"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="8dp"/>
 
@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:text="Password"
         app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ok"
+        app:layout_constraintEnd_toEndOf="@id/cancel"
         android:layout_margin="8dp"/>
 
     <Button
@@ -39,6 +39,7 @@
         app:layout_constraintHorizontal_bias="0.35"/>
 
     <Button
+        android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CANCEL"
