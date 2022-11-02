@@ -37,12 +37,32 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilpassword"
+        android:id="@+id/tilemail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/tilusername"
+        app:startIconDrawable="@android:drawable/ic_dialog_email">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tilemail"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@android:drawable/ic_lock_idle_lock">
 
@@ -57,12 +77,33 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilrepeatpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tilpassword"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@android:drawable/ic_lock_idle_lock">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Repeat password"
+            android:inputType="textPassword">
+
+        </EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
-        android:id="@+id/login"
+        android:id="@+id/signup"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        app:layout_constraintTop_toBottomOf="@id/tilpassword"
+        android:text="SIGN UP"
+        app:layout_constraintTop_toBottomOf="@id/tilrepeatpassword"
         app:layout_constraintStart_toStartOf="@id/guideline1" />
 
     <Button
@@ -70,9 +111,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="CANCEL"
-        app:layout_constraintStart_toEndOf="@id/login"
+        app:layout_constraintStart_toEndOf="@id/signup"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toTopOf="@id/login"
+        app:layout_constraintTop_toTopOf="@id/signup"
         android:layout_marginLeft="8dp"/>
 
     <androidx.constraintlayout.widget.Guideline
