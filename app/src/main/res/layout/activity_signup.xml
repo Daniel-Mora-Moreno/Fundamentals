@@ -2,20 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/layout"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginTop="128dp"
         android:src="@mipmap/ic_t_pose"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="128dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -26,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/logo"
-        app:startIconDrawable="@android:drawable/ic_btn_speak_now" >
+        app:startIconDrawable="@android:drawable/ic_btn_speak_now">
 
         <EditText
             android:layout_width="match_parent"
@@ -102,19 +100,21 @@
         android:id="@+id/signup"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttonselector"
         android:text="SIGN UP"
-        app:layout_constraintTop_toBottomOf="@id/tilrepeatpassword"
-        app:layout_constraintStart_toStartOf="@id/guideline1" />
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/tilrepeatpassword" />
 
     <Button
         android:id="@+id/cancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:backgroundTint="@color/buttonselector"
         android:text="CANCEL"
-        app:layout_constraintStart_toEndOf="@id/signup"
         app:layout_constraintEnd_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toTopOf="@id/signup"
-        android:layout_marginLeft="8dp"/>
+        app:layout_constraintStart_toEndOf="@id/signup"
+        app:layout_constraintTop_toTopOf="@id/signup" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
