@@ -4,6 +4,6 @@
     <style name="layout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:backgroundTint">@color/gray_200</item>
+        <item name="android:backgroundTint">@drawable/gradient</item>
     </style>
 </resources>

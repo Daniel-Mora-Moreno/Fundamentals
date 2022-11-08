@@ -3,7 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/layout"
+    android:background="@drawable/gradient"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/girl"
+        android:scaleType="fitStart"
+        />
 
     <ImageView
         android:id="@+id/logo"
