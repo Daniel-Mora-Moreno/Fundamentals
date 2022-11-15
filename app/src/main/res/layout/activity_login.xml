@@ -2,17 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/scrim"
-    tools:context=".LoginActivity">
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity" >
 
 
     <ImageView
-        android:id="@+id/girl"
+        android:id="@+id/dog"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/girl"
+
         android:scaleType="fitStart"
         />
 
@@ -40,8 +41,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:hint="Username" />
+            android:background="@android:color/white"
+            android:hint="Username"
+            android:imeOptions="actionDone"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,7 +60,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@android:color/white"
             android:hint="Password"
             android:inputType="textPassword">
 
